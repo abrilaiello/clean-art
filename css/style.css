@@ -71,6 +71,7 @@ nav ul{
 	width: 100%;
 	padding: 1%;
 	text-align: center;
+
 }
 
 nav ul li{	
@@ -79,6 +80,7 @@ nav ul li{
     margin-left: 1%;
     margin-right: 4%;
 	text-transform: uppercase;
+	color:pink;
 }
 
 nav ul li a:hover{
