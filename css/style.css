@@ -69,7 +69,7 @@ nav ul{
 	display: grid;
 	grid-template-columns: 20% 24% 24% 32%;
 	width: 100%;
-	padding: 1%;
+	padding: 2%;
 	text-align: center;
 
 }
