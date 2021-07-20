@@ -1,0 +1,165 @@
+.item {
+	border: solid 1px black;
+	background-color: lightgreen;
+	font-size: 20px;
+	padding: 10px;
+}
+.gridFijas {
+	border: solid 1px red;
+	display: grid;
+	grid-template-columns: 300px 100px; 
+    grid-template-rows: 40px 100px;
+}
+.gridFracciones {
+	border: solid 1px red;
+	display: grid;
+	grid-template-columns: 2fr 1fr; 
+    grid-template-rows: 3fr 1fr;
+}
+.gridRepeat {
+	border: solid 1px red;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr);
+}
+.gridHeight {
+	border: solid 1px red;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: 100px 100px;
+}
+.gridContent {
+	border: solid 1px red;
+	display: grid;
+	grid-template-columns: auto auto; 
+    grid-template-rows: auto auto;
+    width: 500px;
+    height: 300px;
+}
+
+.justifyStart {
+	justify-items: start;
+}
+.justifyStretch {
+	justify-items: stretch;
+}
+.justifyEnd {
+	justify-items: end;
+}
+.justifyCenter {
+	justify-items: center;
+}
+.alignStretch {
+	align-items: stretch;
+}
+.alignStart {
+	align-items: start;
+}
+.alignEnd {
+	align-items: end;
+}
+.alignCenter {
+	align-items: center;
+}
+.justifyContentStretch {
+	justify-content: stretch;
+}
+.justifyContentStart {
+	justify-content: start;
+}
+.justifyContentEnd {
+	justify-content: end;
+}
+.justifyContentCenter {
+	justify-content: center;
+}
+.justifyContentSpaceAround {
+	justify-content: space-around;
+}
+.justifyContentSpaceBetween {
+	justify-content: space-between;
+}
+.justifyContentSpaceEvenly {
+	justify-content: space-evenly;
+}
+.alignContentStretch {
+	align-content: stretch;
+}
+.alignContentStart {
+	align-content: start;
+}
+.alignContentEnd {
+	align-content: end;
+}
+.alignContentCenter {
+	align-content: center;
+}
+.alignContentSpaceAround {
+	align-content: space-around;
+}
+.alignContentSpaceBetween {
+	align-content: space-between;
+}
+.alignContentSpaceEvenly {
+	align-content: space-evenly;
+}
+.justifySelfStretch {
+	justify-self: stretch;
+}
+.justifySelfStart {
+	justify-self: start;
+}
+.justifySelfEnd {
+	justify-self: end;
+}
+.justifySelfCenter {
+	justify-self: center;
+}
+.alignSelfStretch {
+	align-self: stretch;
+}
+.alignSelfStart {
+	align-self: start;
+}
+.alignSelfEnd {
+	align-self: end;
+}
+.alignSelfCenter {
+	align-self: center;
+}
+.order {
+	justify-self: center;
+	align-self: center; 
+}
+@media only screen and (max-width: 768px) {
+	.gridAreas {
+		grid-template-rows: 100px 1fr 1fr 1fr 75px;
+		grid-template-columns: 20% auto;
+  		grid-template-areas: 
+			"nav header"
+			"nav productos"
+			"nav servicios"
+			"nav aside"
+			"nav footer";
+	}
+	.item {
+		background-color: lightblue;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.gridAreas {
+		grid-template-rows: 75px 100px 1fr 1fr 1fr 75px;
+		grid-template-columns: auto;
+  		grid-template-areas: 
+			"nav"
+			"header"
+			"productos"
+			"servicios"
+			"aside"
+			"footer";
+	}
+	.item {
+		background-color: lightyellow;
+	}
+}
+
